@@ -2,6 +2,7 @@ package com.swa.microservices.msscbeerservice.domain;
 
 import java.math.BigDecimal;
 import java.security.Timestamp;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 import javax.persistence.Column;
@@ -37,10 +38,10 @@ public class Beer {
 	
 	@CreationTimestamp
 	@Column(updatable=false)
-	private Timestamp createdDate;
+	private LocalDateTime createdDate;
 	
 	@UpdateTimestamp
-	private Timestamp lastModifiedDate;
+	private LocalDateTime lastModifiedDate;
 	
 	private String beerName;
 	private String beerStyle;
